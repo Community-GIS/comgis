@@ -347,17 +347,19 @@ function style(feature) {
     
 }
 
-
+let layer_url;
 function displayPolygon(option){
 tempURL = defaultParameters;
 if(option==='building_footprint'){
-tempURL.typeName = 'geonode:pune_buildings';
+// tempURL.typeName = 'geonode:pune_buildings';
+	layer_url="https://gist.githubusercontent.com/AnimeshN/57c68dd66e951fbb2fa52b4d7c9d7bfd/raw/c92bc5380e44a99a4c3bd103f13e0c6d9714961b/pune_buildings.json";
 }else if(option ==='road_Network'){
-    tempURL.typeName = 'geonode:pune_roads_geo';
+//     tempURL.typeName = 'geonode:pune_roads_geo';
 }
 
 var parameters = L.Util.extend(tempURL);
-layer_url = rootUrl + L.Util.getParamString(parameters);
+// layer_url = rootUrl + L.Util.getParamString(parameters);
+	
 // LayerList.forEach(layer => mymap.removeLayer(layer));
 mymap.spin(true,{lines: 9, length: 2, width: 20, scale: 60,radius: 70, color: "grey"});
 
@@ -478,7 +480,7 @@ var geojsonMarkerOptions = {
 	fillOpacity: 0.8
 };
 
-fetch(point_url)
+fetch("https://gist.githubusercontent.com/AnimeshN/a5fb6e64e288233aaa1705b43f685862/raw/d3d95400ff2ee561a65109a8b5d96c46df3e471d/pune_photo_loc.json")
 .then(
     function(response) {
     if (response.status !== 200) {
