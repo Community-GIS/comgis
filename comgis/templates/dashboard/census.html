@@ -575,7 +575,7 @@ legend.onAdd = function (mymap) {
 
 
 function displayPolygon(param_obj,lat,long){
-
+console.log(displayPolygon);
 var parameters = L.Util.extend(param_obj);
 layer_url = rootUrl + L.Util.getParamString(parameters)
 LayerList.forEach(layer => mymap.removeLayer(layer));
