@@ -39,7 +39,7 @@ except ImportError:
 # General Django development settings
 #
 PROJECT_NAME = 'comgis'
-MY_SITE_URL = 'https://communitygis.net.in/'
+MY_SITE_URL = 'https://communitygis.net/'
 
 # add trailing slash to site url. geoserver url will be relative to this
 if not SITEURL.endswith('/'):
