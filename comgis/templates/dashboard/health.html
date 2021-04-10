@@ -2282,7 +2282,8 @@
                                         outputFormat: 'application/json',
                                         typeName: 'geonode:cumulative_health_facility_till_2june',
                                         cql_filter: `${facility}>0.0 AND state_gen='${indstate}'`,
-                                        propertyName: 'the_geom,facltyname,facltytyp,address_te,amenities,state_gen,district_g,pincode_ge,totbed,state_gen'
+                                        propertyName: 'the_geom,facltyname,facltytyp,address_te,amenities,state_gen,district_g,pincode_ge,totbed,state_gen',
+                                        access_token:'JEHVXND5YpXbzOIFDuusUEZGZpDPy3'
                                     };
                                     let parameters = L.Util.extend(options);
                                     cql_url = rootUrl + L.Util.getParamString(parameters)
