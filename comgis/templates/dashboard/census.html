@@ -575,9 +575,10 @@ legend.onAdd = function (mymap) {
 
 
 function displayPolygon(param_obj,lat,long){
-console.log(displayPolygon);
 var parameters = L.Util.extend(param_obj);
 layer_url = rootUrl + L.Util.getParamString(parameters)
+console.log(layer_url);
+    
 LayerList.forEach(layer => mymap.removeLayer(layer));
 // console.log(layer_url);
 mymap.spin(true,{lines: 15, length: 1, width: 50, scale: 200,radius: 200, color: "grey"});
