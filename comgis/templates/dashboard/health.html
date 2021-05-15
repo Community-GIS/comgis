@@ -2283,7 +2283,7 @@
                                         typeName: 'geonode:cumulative_health_facility_till_2june',
                                         cql_filter: `${facility}>0.0 AND state_gen='${indstate}'`,
                                         propertyName: 'the_geom,facltyname,facltytyp,address_te,amenities,state_gen,district_g,pincode_ge,totbed,state_gen',
-                                        access_token:'JEHVXND5YpXbzOIFDuusUEZGZpDPy3'
+                                        access_token:'FJegupNknSmN2IzGUlvMmx55MjC3gV'
                                     };
                                     let parameters = L.Util.extend(options);
                                     cql_url = rootUrl + L.Util.getParamString(parameters)
@@ -2525,8 +2525,8 @@
                                     };
 
 
-                                    const url = 'https://communitygis.net/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&outputFormat=json&typename=geonode:maha_village_health_centroid_29mar&access_token=JEHVXND5YpXbzOIFDuusUEZGZpDPy3';
-                                    const url2 = 'https://communitygis.net/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&outputFormat=json&typename=geonode:townhealth_centroid_15apr&access_token=JEHVXND5YpXbzOIFDuusUEZGZpDPy3';
+                                    const url = 'https://communitygis.net/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&outputFormat=json&typename=geonode:maha_village_health_centroid_29mar&access_token=FJegupNknSmN2IzGUlvMmx55MjC3gV';
+                                    const url2 = 'https://communitygis.net/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&outputFormat=json&typename=geonode:townhealth_centroid_15apr&access_token=FJegupNknSmN2IzGUlvMmx55MjC3gV';
 
                                     if (facility == 'CHC')
                                         newurl = url + `&cql_filter=chc_num>0`;
